@@ -12,7 +12,7 @@ df$Date<- strptime(paste(df$Date,df$Time), "%d/%m/%Y %H:%M:%S")
 df$Time<- strptime(paste(df$Date,df$Time), "%d/%m/%Y %H:%M:%S")
 
 ## modify default parameters to change the layout of data
-par(mar = c(2.5,4,1,1))
+par(mar = c(2,4,1,1))
 
 ## create a plot with lines type and a custom y-axis label
 with(df, plot(Date, Global_active_power, type = "l", ylab = "Global Active Power (kilowatts)"))
