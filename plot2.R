@@ -15,4 +15,4 @@ df$Time<- strptime(paste(df$Date,df$Time), "%d/%m/%Y %H:%M:%S")
 par(mar = c(2,4,1,1))
 
 ## create a plot with lines type and a custom y-axis label
-with(df, plot(Date, Global_active_power, type = "l", ylab = "Global Active Power (kilowatts)"))
+with(df, plot(Date, Global_active_power, type = "l", xlab = " ", ylab = "Global Active Power (kilowatts)"))
