@@ -15,7 +15,7 @@ df$Time<- strptime(paste(df$Date,df$Time), "%d/%m/%Y %H:%M:%S")
 par(mar = c(2,4,1,1))
 
 ## plot empty chart and subsequent lines
-with(df, plot(Date, Sub_metering_1, type = "n", ylab = "Energy submetering"))
+with(df, plot(Date, Sub_metering_1, type = "n", ylab = "Energy submetering", xlab = " "))
 with(df, lines(Date, Sub_metering_1, type = "l", col = "black"))
 with(df, lines(Date, Sub_metering_2, type = "l", col = "red"))
 with(df, lines(Date, Sub_metering_3, type = "l", col = "blue"))
